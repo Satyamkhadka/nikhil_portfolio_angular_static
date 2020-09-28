@@ -1,0 +1,159 @@
+<app-navigation></app-navigation>
+
+<!-- <div class="loading mt-5" *ngIf="!people">
+    <img class="loading-image" src="../../assets/pics/loading.gif" alt="Loading...">
+    <div class="loading text-center mt-5"> Loading . . . </div>
+</div> -->
+
+<div>
+    <section>
+        <div class="jumbotron w-100 mt-3">
+            <div class="text-muted text-center h1 mt-3">
+                Namaste!
+                <br>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#message">
+                    <div class="btn btn-secondary text-warning text-center mx-auto ">
+                        Leave a message
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container-flex background">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 mx-auto">
+                    <img src="../../assets/pics/nikhil.png" class="mx-auto c-fluid-image "
+                        alt="photo load hudai hola ekxin hai gaich. Free ko hosting yestai ho slow ..  ">
+                </div>
+
+            </div>
+            <div class="row run d-none d-sm-block">
+                <div class="col-12">
+                    <h1 class=" float-left awesome-text">
+                        <pre class="awesome-text"> - {{people.firstname}}</pre>
+                    </h1>
+                </div>
+            </div>
+            <div class="row run text-center d-none d-sm-block sticky-top">
+                <div class="col-12">
+                    <h1 class="float-right">
+                        <pre class="awesome-text">{{people.lastname}} - </pre>
+                    </h1>
+                </div>
+            </div>
+            <!-- social media bar -->
+            <div class="row my-5">
+                <div class="container-fluid padding">
+                    <div class="row text-center align-items-center padding">
+
+                        <div class="d-flex justify-content-around w-100">
+                            <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                                    [href]="people['google'] || '#'"> <i class="fa fa-google"></i></a></div>
+                            <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                                    [href]="people['facebook'] || '#'"> <i class="fa fa-facebook"></i></a></div>
+                            <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                                    [href]=" people['twitter'] || '#'"> <i class="fa fa-twitter"></i></a></div>
+                            <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                                    [href]=" people['instagram'] || '#'"> <i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+
+        <div class="container-flex mt-3 mb-5">
+            <div class="row h1 w-100">
+                <div class="col-12 text-center awesome-text">
+                    {{people.firstname +' '+ people.lastname}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-8 mx-auto">
+
+                    <!-- <ngx-md class="text-center" markdown="1" [data]="people.about"> -->
+                    <div class="text-center" [innerHtml]="people.about">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- <section>
+        <div class="container-flex">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <a [routerLink]="['/blogs/all']" routerLinkActive="router-link-active" class="btn btn-warning">
+                        Read my blogs!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section>
+        <hr name="message" id="message" width="80% mt-5">
+        <div class="container-flex my-5">
+            <div class="row">
+                <div class="col-6 mx-auto">
+                    <div class="text-dark text-center h2">
+                        Send me a word.
+                    </div>
+                    <div class="text-muted text-center h6">
+                        Send me hello.Will be happy hearing from you!
+                    </div>
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-5">
+                                <label class="sr-only" for="inlineFormInput">Name</label>
+                                <input type="text" class="form-control mb-2" id="inlineFormInput"
+                                    placeholder="Ram Prasad or Harilaal">
+                            </div>
+                            <div class="col-7">
+                                <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                    </div>
+                                    <input type="text" class="form-control" id="inlineFormInputGroup"
+                                        placeholder="you@yourprovider.com">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+
+                            <div class="col-12">
+                                <input type="textbox" class="form-control" id="inlineFormInputGroup"
+                                    placeholder="message">
+                            </div>
+                        </div>
+                        <div class="form-row mt-2">
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-lg btn-primary mb-2 w-100"
+                                    (click)="notready()">Send</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+
+        <app-footer></app-footer>
+    </section>
+
+</div>

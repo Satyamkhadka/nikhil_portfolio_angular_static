@@ -1,0 +1,64 @@
+<!-- footer -->
+<footer>
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <hr class="light">
+
+        <img src="../../assets/pics/nikhil.png" width="40px" height="40px"
+          class="d-inline-block align-top rounded-circle" alt="" style="object-fit: cover; object-position:top; ">
+
+        <hr class="light">
+
+        <ngx-md [data]="person['address']"></ngx-md>
+
+
+      </div>
+      <div class="col-md-4cd ">
+        <!-- connect -->
+        <div class="contaicd ner-fluid padding">
+          <div class="row text-center align-items-center padding">
+            <div class="col-12">
+              <hr class="licd ght">
+              <h2>Connect</h2>
+              <hr class="light">
+            </div>
+            <div class="d-flex justify-content-around w-100">
+              <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                  [href]="person['google'] || '#'"> <i class="fa fa-google"></i></a></div>
+              <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                  [href]="person['facebook'] || '#'"> <i class="fa fa-facebook"></i></a>
+              </div>
+              <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                  [href]=" person['twitter'] || '#'"> <i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="d-flex justify-content-around"><a target="_blank" rel="noreferrer"
+                  [href]=" person['instagram'] || '#'"> <i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- connect -->
+      </div>
+
+      <div class="col-md-4">
+        <hr class="light">
+        <img src="../../assets/pics/nikhil.png" width="40px" height="40px"
+          class="d-inline-block align-top rounded-circle" alt="" style="object-fit: cover; object-position:top; ">
+        <hr class="light">
+        <ngx-md [data]="person.contact"></ngx-md>
+      </div>
+    </div>
+  </div>
+
+  <!-- developed by -->
+  <hr class="light" width="100%">
+  <p class="light text-center pt-4">
+    <a href="http://satyamkhadka.com.np" target="_blank" rel="noreferrer"> Developed By
+      Satyam</a>
+  </p>
+  <p class=" text-warning text-center p-2"> --- </p>
+  <!-- developed by -->
+
+</footer>
+<!-- footer -->
